@@ -1,0 +1,553 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times;
+}
+
+body {
+    background-color: #1C1C1C;
+}
+
+/*NAV BAR*/
+nav {
+    color: #fff;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+nav h3 {
+    padding: 14px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+nav li {
+    padding: 12px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #696969;
+}
+
+button {
+    display: none;
+}
+
+@media screen and (max-width: 787px) {
+
+    nav {
+        display: block;
+        padding: 14px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        height: 0;
+    }
+
+    nav li {
+        text-align: center;
+        padding: 14px;
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        color: #fff;
+        top: 15px;
+        right: 10px;
+    }
+
+    button:focus~ul {
+        height: 220px;
+        transition: all 0.5s;
+    }
+}
+/*END NAV BAR*/
+
+/*INTRODUÇÃO*/
+.intro {
+    padding: 34px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.h-cor h1 {
+    display: inline;
+    font-size: 50px;
+}
+
+.texto p {
+    font-size: 17px;
+}
+
+.texto {
+    position: relative;
+}
+
+.wame {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 14px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.ft-hide {
+    display: none;
+}
+
+.ft-lado {
+    position: absolute;
+    right: 5rem;
+    width: 20%;
+    height: 259px;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+#esc {
+    display: none;
+}
+
+.scanor {
+    position: relative;
+    color: #DC143C;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+@media screen and (max-width:600px) {
+
+    .intro{display: block;}
+
+    .ft-lado {
+        display: none;
+    }
+
+    .ft-hide {
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 220px;
+        border-radius: 50%;
+        border: #DC143C solid 4px;
+    }
+
+    .ns {
+        font-size: 55px;
+    }
+
+    .texto p {
+        font-size: 17px;
+    }
+
+    #esc {
+        display: block;
+    }
+}
+
+/*SOBRE MIM*/
+.me {
+    font-size: 27px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 125px;
+    color: #fff;
+}
+
+.sobre {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-transform: capitalize;
+    color: #fff;
+    align-items: center;
+}
+
+.sobre ul {
+    list-style: none;
+}
+
+.sobre li {
+    padding: 7px;
+    font-size: 17px;
+}
+
+.sobre a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dest {
+    color: #DC143C;
+}
+
+.dest2 {
+    text-align: left;
+    color: #DC143C;
+}
+
+.skills {
+    align-items: baseline;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+}
+
+@media screen and (max-width:1056px) {
+
+    .sobre {
+        display: block;
+    }
+
+    .skills {
+        padding-top: 32px;
+    }
+
+    .me {
+        font-size: 27px;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 12px;
+        color: #fff;
+    }
+}
+
+/*SERVIÇOS*/
+.serv p {
+    color: #808080;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ser {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.odin {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.thor {
+    display: inline-block;
+}
+
+.thor img {
+    width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .serv{
+        display: block;
+    }
+
+    .odin {
+        display: block;
+    }
+
+    .thor {
+        padding: 18px;
+    }
+
+    .thor h2 {
+        font-size: 18px;
+    }
+}
+
+/*PROJECTOS*/
+.projectos {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.draks {
+    padding-top: 70px;
+    text-align: center;
+    color: #808080;
+}
+
+.projectos-pai {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 23px;
+    gap: 11px;
+}
+
+.filho-site {
+    background-color: #696969;
+    color: #000;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.visita {
+    background-color: #DC143C;
+    color: #fff;
+    padding: 12px 26px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.burger {
+    width: 100%;
+    height: 14rem;
+}
+
+#sueka,
+#xxhide {
+    display: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media screen and (max-width: 784px) {
+    .projectos-pai {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #xxhide {
+        display: block;
+    }
+}
+
+@media screen and (max-width:810px) {
+
+    .draks {
+        padding-top: 40px;
+        text-align: center;
+        color: #808080;
+    }
+
+    #sueka {
+        display: block;
+    }
+}
+
+/*FALE COMIGO*/
+.talk {
+    padding: 43px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.dr {
+    text-align: center;
+    color: #696969;
+    text-transform: uppercase;
+}
+
+.stay {
+    color: #808080;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.talk h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h-cor {
+    justify-content: center;
+    display: inline;
+}
+
+.h-cor h2 {
+    display: inline;
+}
+
+label {
+    font-size: 19px;
+}
+
+input {
+    background-color: #696969;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    width: 30%;
+    font-size: 19px;
+}
+
+textarea {
+    background-color: #696969;
+    color: #fff;
+    font-size: 14px;
+}
+
+.enviar {
+    background-color: #DC143C;
+    width: 15%;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+@media screen and (max-width:700px) {
+
+    input {
+        background-color: #696969;
+        color: #fff;
+        padding: 8px;
+        border: none;
+        width: 80%;
+        font-size: 19px;
+    }
+
+    textarea {
+        background-color: #696969;
+        color: #fff;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .enviar {
+        background-color: #DC143C;
+        width: 35%;
+        border-radius: 15px;
+        padding: 12px;
+    }
+}
+
+
+/*OUTROS*/
+.red {
+    color: #DC143C;
+}s
+
+/*FOOTER*/
+footer {
+    padding: 24px;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #363636;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    font-size: 22px;
+    padding: 9px;
+}
+
+.footer-logo {
+    width: 44%;
+}
+
+.dracula {
+    font-style: oblique;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    font-size: 18px;
+    padding: 9px;
+}
+
+footer li:hover {
+    padding-left: 28px;
+    transition: all 0.3s;
+}
+
+.midea img {
+    width: 20%;
+    height: 50%;
+    padding: 4px;
+}
+
+.midea img:hover {
+    padding: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copy {
+    display: flex;
+    background-color: #696969;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-style: oblique;
+    justify-content: center;
+}
+
+.copy h4 {
+    color: #DC143C;
+}
+
+@media screen and (max-width:700px) {
+
+    .footer_content {
+        display: block;
+        flex-direction: column;
+    }
+
+    .midea img {
+        width: 15%;
+        padding: 4px;
+    }
+
+    .copy {
+        display: flex;
+        padding: 9px;
+        font-size: 17px;
+    }
+}
